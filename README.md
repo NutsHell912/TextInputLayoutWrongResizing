@@ -9,6 +9,7 @@ Expected result - TextInputLayout is resizing to its initial height.
 
 Actual result - TextInputLayout is stuck with big height.
 
+![TextInputLayoutWrongResize](https://github.com/material-components/material-components-android/assets/23400995/9e28667f-9ac0-4b34-ac35-09d6e2bbbc7e)
 
 Problem happens only if TextInputLayout is losing focus. Otherwise it's resizing correctly.
 After some research I figure out that after losing focus editText has wrong mMinHeight.
