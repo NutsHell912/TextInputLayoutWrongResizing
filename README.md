@@ -1,12 +1,13 @@
-[TextInputLayout] endIcon prevents TextInputLayout resizing after clearing multiline text
+# [TextInputLayout] endIcon prevents TextInputLayout resizing after clearing multiline text
 
 1) setup TextInputLayout with app:endIconMode="clear_text" and app:endIconDrawable="@android:drawable/ic_notification_clear_all"
-2) insert or print long text without new line separator (for instance "aaaaaaaaaaaaa" or "aa dfg sdf" multiply times), until multiple wrapping to the next line
+2) insert or print long text without new line separator (for instance "aaaaaaaaaaaaa" or "aa dfg sdf" multiple times), until multiple wrapping to the next line
 3) clear focus from TextInputEditText/TextInputLayout
 4) focus on TextInputEditText again and clear all text(via endIcon or software keyboard)
 
-Expected result - TextInputLayout is resizing to its initial height
-Actual result - TextInputLayout is stuck with big height
+Expected result - TextInputLayout is resizing to its initial height.
+
+Actual result - TextInputLayout is stuck with big height.
 
 
 Problem happens only if TextInputLayout is losing focus. Otherwise it's resizing correctly.
