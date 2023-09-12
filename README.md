@@ -1,6 +1,6 @@
 # [TextInputLayout] endIcon prevents TextInputLayout resizing after clearing multiline text
 
-https://github.com/material-components/material-components-android/issues/3451
+Issue: https://github.com/material-components/material-components-android/issues/3451
 
 1) setup TextInputLayout with app:endIconMode="clear_text" and app:endIconDrawable="@android:drawable/ic_notification_clear_all"
 2) insert or print long text without new line separator (for instance "aaaaaaaaaaaaa" or "aa dfg sdf" multiple times), until multiple wrapping to the next line
